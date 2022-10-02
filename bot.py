@@ -91,15 +91,15 @@ async def home(client, message):
   reply_markup = InlineKeyboardMarkup(buttons)
   await Tgraph.send_message(
         chat_id=message.chat.id,
-        text="""<b>Hey there,
+        text="""*Hey there,
         
 im a telegraph Uploader That Can Upload Photo, Video And Gif
         
 Simply send me photo, video or gif to upload to Telegra.ph
         
-Made With Love By @indusBots</b>""",
+Made With Love By @indusBots*""",
         reply_markup=reply_markup,
-        parse_mode="html",
+        parse_mode="Markdown",
         
     )
 
@@ -121,7 +121,7 @@ Just Send Me A Video/gif/photo Upto 5mb.
 
 i'll upload ut to telegra.ph and give you the direct link""",
         reply_markup=reply_markup,
-        parse_mode="html",
+        parse_mode="Markdown",
         
     )                           
 @Tgraph.on_callback_query()
