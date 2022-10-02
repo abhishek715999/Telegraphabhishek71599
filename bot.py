@@ -99,7 +99,7 @@ Simply send me photo, video or gif to upload to Telegra.ph
         
 Made With Love By @indusBots*""",
         reply_markup=reply_markup,
-        parse_mode="Markdown",
+        
         
     )
 
@@ -121,7 +121,7 @@ Just Send Me A Video/gif/photo Upto 5mb.
 
 i'll upload ut to telegra.ph and give you the direct link""",
         reply_markup=reply_markup,
-        parse_mode="Markdown",
+        
         
     )                           
 @Tgraph.on_callback_query()
