@@ -100,7 +100,7 @@ Simply send me photo, video or gif to upload to Telegra.ph
 Made With Love By @indusBots</b>""",
         reply_markup=reply_markup,
         parse_mode="html",
-        reply_to_message_id=message.message_id
+        
     )
 
 @Tgraph.on_message(filters.command(["help"]))
@@ -122,7 +122,7 @@ Just Send Me A Video/gif/photo Upto 5mb.
 i'll upload ut to telegra.ph and give you the direct link""",
         reply_markup=reply_markup,
         parse_mode="html",
-        reply_to_message_id=message.message_id
+        
     )                           
 @Tgraph.on_callback_query()
 async def button(Tgraph, update):
